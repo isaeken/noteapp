@@ -4044,13 +4044,13 @@
             "version": "v1.3.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/isaeken/color.git",
-                "reference": "4419cf7d5add6c4ba7503b11c357b9a6d4ab91f6"
+                "url": "https://github.com/spatie/color.git",
+                "reference": "fafbf8900541230e10abb2b165990e4758c28024"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/isaeken/color/zipball/4419cf7d5add6c4ba7503b11c357b9a6d4ab91f6",
-                "reference": "4419cf7d5add6c4ba7503b11c357b9a6d4ab91f6",
+                "url": "https://api.github.com/repos/spatie/color/zipball/fafbf8900541230e10abb2b165990e4758c28024",
+                "reference": "fafbf8900541230e10abb2b165990e4758c28024",
                 "shasum": ""
             },
             "require": {
@@ -4065,16 +4065,7 @@
                     "Spatie\\Color\\": "src"
                 }
             },
-            "autoload-dev": {
-                "psr-4": {
-                    "Spatie\\Color\\Test\\": "tests"
-                }
-            },
-            "scripts": {
-                "test": [
-                    "vendor/bin/phpunit"
-                ]
-            },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -4095,15 +4086,16 @@
                 "spatie"
             ],
             "support": {
-                "source": "https://github.com/isaeken/color/tree/v1.3.0"
+                "issues": "https://github.com/spatie/color/issues",
+                "source": "https://github.com/spatie/color/tree/1.3.0"
             },
             "funding": [
                 {
-                    "type": "github",
-                    "url": "https://github.com/spatie"
+                    "url": "https://github.com/spatie",
+                    "type": "github"
                 }
             ],
-            "time": "2021-07-15T15:59:49+00:00"
+            "time": "2021-09-06T08:57:14+00:00"
         },
         {
             "name": "swiftmailer/swiftmailer",
@@ -9064,5 +9056,5 @@
         "php": "^8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
