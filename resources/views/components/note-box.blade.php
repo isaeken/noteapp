@@ -39,7 +39,7 @@
         </div>
     </div>
 
-    <div class="py-3 px-4 rounded-lg relative" @if (mb_strlen($note->color)) style="color: {{ \Spatie\Color\Hex::fromString($note->color)->contrast()->toHex()->__toString() }}" @endif>
+    <div class="py-3 px-4 rounded-lg relative" @if (mb_strlen($note->color)) style="color: {{ \Spatie\Color\Hex::fromString($note->color)->__toString() }}" @endif>
         <div class="relative block z-20">
             <div class="font-semibold flex">
                 <div class="leading-8 w-full" x-on:click="open = ! open; page = 'show'">{{ $note->getTitleAttribute(false) }}</div>
@@ -59,7 +59,7 @@
                 </div>
             </div>
             <div class="py-3" x-on:click="open = ! open; page = 'show'">
-                <p class="text-gray-600 h-20 overflow-hidden" @if (mb_strlen($note->color)) style="color: {{ \Spatie\Color\Hex::fromString($note->color)->contrast()->toHex()->__toString() }}" @endif>
+                <p class="text-gray-600 h-20 overflow-hidden" @if (mb_strlen($note->color)) style="color: {{ \Spatie\Color\Hex::fromString($note->color)->__toString() }}" @endif>
                     {!! \Illuminate\Support\Str::limit(nl2br($note->getMessageAttribute(false))) !!}
                 </p>
             </div>
